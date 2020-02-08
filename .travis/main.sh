@@ -34,6 +34,7 @@ setup_dependencies() {
   sudo apt install realpath python python-pip -y
   sudo apt install --only-upgrade docker-ce -y
 
+  sudo pip uninstall -y pyopenssl && sudo pip install pyopenssl
   sudo pip install docker-compose || true
 
   docker info
